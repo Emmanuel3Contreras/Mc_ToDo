@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<< feature/login
         android:theme="@style/Theme.Mc_ToDo"
         tools:targetApi="31">
         <activity
@@ -25,12 +26,29 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+        android:theme="@style/Theme.Mc_ToDo" tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+              master
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+ feature/login
             android:name=".MainActivity"
             android:exported="true" />
+            android:name=".TaskListActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Mc_ToDo"> </activity>
+ master
 
     </application>
 
