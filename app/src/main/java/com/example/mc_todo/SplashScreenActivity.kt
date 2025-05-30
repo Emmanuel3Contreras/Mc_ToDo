@@ -8,21 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
-    // Define la duración de la pantalla de inicio en milisegundos
+    // Duración de la pantalla de inicio en milisegundos
     private val SPLASH_TIME_OUT: Long = 3000 // 3 segundos
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Establece el diseño de la pantalla de inicio
-        setContentView(R.layout.activity_splash_screen) // ¡Apuntamos al nuevo layout!
+        setContentView(R.layout.activity_splash_screen)
 
-        // Usa un Handler para retrasar el inicio de la actividad principal
+        // Usa un Handler para retrasar el inicio de LoginActivity
         Handler(Looper.getMainLooper()).postDelayed({
-            // Crea un Intent para iniciar la actividad principal de tu aplicación
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent) // Inicia la actividad principal
+            // Intent para iniciar LoginActivity (en lugar de MainActivity)
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
 
-            finish() // Finaliza la actividad de la pantalla de inicio
+            finish() // Cierra la SplashScreen para que no se pueda volver atrás
         }, SPLASH_TIME_OUT)
     }
 }
