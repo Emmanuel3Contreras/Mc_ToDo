@@ -27,7 +27,9 @@
         android:minWidth="0dp"
         android:minHeight="0dp"
         tools:checked="false"
-        android:buttonTint="?attr/colorPrimary" /> <TextView
+        android:buttonTint="?attr/colorPrimary" />
+
+    <TextView
     android:id="@+id/tv_task_title"
     android:layout_width="0dp"
     android:layout_height="wrap_content"

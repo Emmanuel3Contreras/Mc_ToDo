@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context=".TaskListActivity">
+    android:background="@color/background_screen" tools:context=".TaskListActivity">
 
     <TextView
         android:id="@+id/tv_task_list_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Mis Tareas" android:textSize="28sp"
+        android:text="Mis Tareas"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="?attr/colorSurfaceVariant" /> <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/card_background" /> <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/rv_tasks"
     android:layout_width="0dp"
     android:layout_height="0dp"
@@ -32,4 +32,6 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    tools:listitem="@layout/item_task" /> </androidx.constraintlayout.widget.ConstraintLayout>
+    tools:listitem="@layout/item_task" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
