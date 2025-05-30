@@ -1,18 +1,23 @@
 [versions]
-agp = "8.8.0"
-firebaseBom = "33.14.0"
-kotlin = "1.9.24"
-coreKtx = "1.16.0"
-junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-appcompat = "1.7.0"
-material = "1.12.0"
-activity = "1.10.1"
-constraintlayout = "2.2.1"
-firebaseCommonKtx = "21.0.0"
-firebaseAuthKtx = "23.2.1"
-firebaseFirestoreKtx = "25.1.4"
+# Versiones de las librerías
+# Asegúrate de que estas versiones sean las más recientes estables.
+# Puedes verificar las últimas versiones en https://developer.android.com/jetpack/androidx/releases
+agp = "8.8.0" # Tu versión actual
+firebaseBom = "33.14.0" # Tu versión actual
+kotlin = "2.0.0" # <--- ¡CAMBIO CLAVE AQUÍ! Actualizado a Kotlin 2.0.0
+coreKtx = "1.16.0" # Tu versión actual
+junit = "4.13.2" # Tu versión actual
+junitVersion = "1.2.1" # Tu versión actual
+espressoCore = "3.6.1" # Tu versión actual
+appcompat = "1.7.0" # Tu versión actual
+material = "1.12.0" # Tu versión actual
+activity = "1.10.1" # Tu versión actual
+constraintlayout = "2.2.1" # Tu versión actual
+firebaseCommonKtx = "21.0.0" # Tu versión actual
+firebaseAuthKtx = "23.2.1" # Tu versión actual
+firebaseFirestoreKtx = "25.1.4" # Tu versión actual
+recyclerview = "1.3.2" # <--- ¡AÑADIDO! Versión estable para RecyclerView
+cardview = "1.0.0"     # <--- ¡AÑADIDO! Versión estable para CardView
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -27,8 +32,9 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 firebase-common-ktx = { group = "com.google.firebase", name = "firebase-common-ktx", version.ref = "firebaseCommonKtx" }
 firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
 firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" } # <--- ¡AÑADIDO!
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }             # <--- ¡AÑADIDO!
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
