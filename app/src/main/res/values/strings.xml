@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Mc ToDo</string> <string name="app_logo_description">Logo de la aplicación</string>
+    <string name="app_name">Mc ToDo</string>
+    <string name="app_logo_description">Logo de la aplicación</string>
     <string name="microsoft_logo_description">Logo de Microsoft</string>
 </resources>
